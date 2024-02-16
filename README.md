@@ -1,56 +1,44 @@
-<h1>BotPack🤖<sub><sub>v1.6.0🚀</sub><sub><sub><h6>- By Yan Maglinte</h6></sub></sub></sub>
-  <img align="center" src="https://i.ibb.co/gMMvsYf/20240125-225244-0000.png"></a>
-
+<h1>BOT LUNA🤖<sub><sub>لونا عمتك</sub><sub><sub><h6>- مطور زينو</h6></sub></sub></sub>
+  
 <h3>Introduction</h3></h1>
 
-#### Join us in [ChatBot Community Ltd.](https://www.facebook.com/groups/178711334798450/?ref=share)🍪
-###### If you encounter any issues or difficulties, don't hesitate to reach out and ask for assistance here. Our team is here to help you with any problems you may face.
-###### Want more commands? Join our group now and discover new and cool commands. All provided for FREE! Created by hundreds of creators from our great bot community!
-
-[<img align="center" src="https://i.ibb.co/khSZZPL/IMG-20230730-074956.jpg">](https://www.facebook.com/groups/178711334798450/?ref=share)
+[<img align="center" src="https://i.postimg.cc/52RHwFyQ/Picsart-24-02-15-14-46-54-462.jpg">](https://www.facebook.com/mokh.tar.186590)
 <h1></h1>
 
-- Welcome to the [BotPack](https://replit.com/@YanMaglinte/BotPack)🌀 repository. This project is an unofficial bot file from the [Mirai](https://github.com/m1raibot/miraiv2) Repository, initially developed and maintained by [Phạm Văn Diện](https://github.com/D-Jukie/Disme-Bot.git), better known as [D-Jukie](https://github.com/D-Jukie). The base file for this project is sourced from the [Disme-Bot](https://github.com/D-Jukie/Disme-Bot.git) GitHub project.
-
-- [BotPack](https://replit.com/@YanMaglinte/BotPack)🌀 is a modified messenger bot file by [Yan Maglinte](https://replit.com/@YanMaglinte)🇵🇭. It is a refined version of the Mirai messenger bot, with some unique enhancements. 
-
-- A key feature is the `usePrefix` function integrated within every command. This function removes the need for prefixes, providing a more streamlined user experience. Alongside ready-made commands and free-to-edit codes, this bot file encourages users to learn and explore freely.
-<img align="center" src="https://i.imgur.com/Je8NbDn.jpg"/>
-
-- Further, [BotPack](https://replit.com/@YanMaglinte/BotPack)🌀 comes with a user-friendly feature that allows easy customization of your console design via the `theme` option in the config.json file. This makes it highly accessible, especially for beginners.
-<img align="center" src="https://i.imgur.com/wHD2zXv.jpg"/>
-
-- Embrace the world of possibilities with [BotPack](https://replit.com/@YanMaglinte/BotPack)🌀 - a facebook Messenger file designed to make your interaction with messenger bots smoother and more efficient.
+ الميزة الرئيسية هي وظيفة `usePrefix` المدمجة في كل أمر. تلغي هذه الوظيفة الحاجة إلى البادئات، مما يوفر تجربة مستخدم أكثر انسيابية. إلى جانب الأوامر الجاهزة والأكواد التي يمكن تحريرها مجانًا، يشجع ملف الروبوت هذا المستخدمين على التعلم والاستكشاف بحرية.
+- 
+<img align="center" src="https://i.postimg.cc/Njm50wzZ/Picsart-24-02-15-07-12-23-791.jpg"/>
 
 <div align="center">
       <h3>My Replit Account ->
-      <a href="https://replit.com/@YanMaglinte" style="color: green;">@YanMaglinte🔥</a>
+      <a href="https://replit.com/@YanMaglinte" style="color: green;">@ZINO🔥</a>
         <br>
   My Facebook Account ->
-  <a href="https://www.facebook.com/yandeva.me?mibextid=b06tZ0" style="color: green;">Yan🚀</a></h3></div>
+  <a href="https://www.facebook.com/profile.php?id=100013384479798
+    " style="color: green;">@ZINO く愛</a></h3></div>
 
-- If you encounter any issues or have questions related to this REPL, please don't hesitate to reach out to me on Facebook. I'm here to assist you!
+<img align="center" src="https://i.postimg.cc/Jnvt6dkN/IMG-20240215-050159.jpg"/>
+##
 
-<img align="center" src="https://i.ibb.co/z4d9ttK/Screenshot-2024-01-25-06-40-30-01-a23b203fd3aafc6dcb84e438dda678b6.jpg"/>
+boolean</br></br>
+```premium ussage example```
+```js
+module.exports.config = {
+  name: "اسم الامر",
+  version: "1.0.0",
+  hasPermssion: 0,
+  credits: "ZINO く愛",
+  description: "شرح الامر",
+  usePrefix: true,يمكنك ازالة بادئة بكتابة 
+  false
+  commandCategory: "تصنيف الامر",
+  usages: "query",
+  cooldowns: 10,
+};
+```
+```txt
+UPCOMING UPDATE :
+adding aliases for each commands
+```
 
-## **How to Start Using BotPack?**
-1. Begin by navigating to [Replit](https://replit.com).
-2. Log in to your existing account or sign up for a new one.
-3. Utilize the search bar to find [BotPack](https://replit.com/@YanMaglinte/BotPack).
-4. Click on `templates`.
-5. Upon searching, select the most popular BotPack template from the results.
-6. Afterwards, click `Use Template`.
-7. After forking the template, initiate it by clicking on ***'Run'***.
-8. Be patient and wait until something appears that ask you to log in using your `Facebook Bot Account`.
-9. After logging in, you can now enjoy and have fun! 😊
-
-> *Note: There is a risk of your account being banned after a certain period, so please ensure proper account management and handling!*
-
-<h2>Credits<sub><h6>Special thanks to the following fellows for making this modified project possible:</h6></sub></h2>
-
-> - 🔴SpermLord
-> - 🟡CatalizCS
-> - 🟢D-Jukie
-> - 🟠NTKhang03
-> - 🟣KhangGia1810
-> <h6>Updated on: January 26, 2024 (PST)<br>Creation Date: June 11, 2023</h6>
+> <h6>تم انشاء في 15 فيفري</h6>
