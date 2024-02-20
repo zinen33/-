@@ -14,12 +14,12 @@ const readline = require('readline');
 let configJson;
 let packageJson;
 const sign = '(›^-^)›';
-const fbstate = 'appstate.json';
+const fbstate = 'LUNA.json';
 
 try {
-  configJson = require('./config.json');
+  configJson = require('./config-LUNA.json');
 } catch (error) {
-  console.error('Error loading config.json:', error);
+  console.error('Error loading config-LUNA.json:', error);
   process.exit(1); // Exit the script with an error code
 }
 
@@ -35,7 +35,7 @@ const delayedLog = async (message) => {
 };
 
 const showMessage = async () => {
-  const message = chalk.yellow(' ') + `The "removeSt" property is set true in the config.json. Therefore, the Appstate was cleared effortlessly! You can now place a new one in the same directory.`;
+  const message = chalk.yellow(' ') + `The "removeSt" property is set true in the config_LUNA.json. Therefore, the Appstate was cleared effortlessly! You can now place a new one in the same directory.`;
 
   await delayedLog(message);
 };
@@ -44,7 +44,7 @@ if (configJson.removeSt) {
   fs.writeFileSync(fbstate, sign, { encoding: 'utf8', flag: 'w' });
   showMessage();
   configJson.removeSt = false;
-  fs.writeFileSync('./config.json', JSON.stringify(configJson, null, 2), 'utf8');
+  fs.writeFileSync('./config-LUNA.json', JSON.stringify(configJson, null, 2), 'utf8');
   setTimeout(() => {
     process.exit(0);
   }, 10000);
@@ -63,7 +63,7 @@ app.get('/', (req, res) => res.sendStatus(200));
 
   console.clear();
   console.log(chalk.bold.dim(` ${process.env.REPL_SLUG}`.toUpperCase() + `(v${pkg.version})`));
-  logger(`Getting Started!`, "STARTER");
+  logger(`Getting Started!`, "LUNA");
   startBot(0);
 
   async function isPortAvailable(port) {
@@ -83,7 +83,7 @@ app.get('/', (req, res) => res.sendStatus(200));
     });
 
     app.on('error', (error) => {
-      logger(`An error occurred while starting the server: ${error}`, "SYSTEM");
+      logger(`An error occurred while starting the server: ${error}`, "LUNA");
     });
   }
 
@@ -93,7 +93,7 @@ app.get('/', (req, res) => res.sendStatus(200));
     try {
       const isAvailable = await isPortAvailable(currentPort);
       if (!isAvailable) {
-        logger(`Retrying...`, "SYSTEM");
+        logger(`Retrying...`, "LUNA");
         const newPort = getRandomPort();
         logger.loader(`Current port ${currentPort} is not available. Switching to new port ${newPort}.`);
         currentPort = newPort;
@@ -118,10 +118,10 @@ app.get('/', (req, res) => res.sendStatus(200));
       });
 
       child.on("error", (error) => {
-        logger(`An error occurred while starting the child process: ${error}`, "SYSTEM");
+        logger(`An error occurred while starting the child process: ${error}`, "LUNA");
       });
     } catch (err) {
-      logger(`Error while starting the bot: ${err}`, "SYSTEM");
+      logger(`Error while starting the bot: ${err}`, "LUNA");
     }
   }
 
@@ -173,7 +173,7 @@ async function checkAndUpdate() {
       console.error('Error checking and updating dependencies:', error);
     }
   } else {
-    console.log(chalk.yellow(''), 'Update for packages is not enabled in config.json');
+    console.log(chalk.yellow(''), 'Update for packages is not enabled in config-LUNA.json');
   }
 }
 
