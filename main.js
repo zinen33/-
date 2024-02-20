@@ -262,7 +262,7 @@ function onBot() {
       (async () => {
         const commandsPath = `${global.client.mainPath}/modules/commands`;
         const listCommand = readdirSync(commandsPath).filter(command => command.endsWith('.js') && !command.includes('example') && !global.config.commandDisabled.includes(command));
-        console.log(cv(`\n` + `──LOADING COMMANDS─●`));
+        console.log(cv(`\n` + `──BOT LUNA─●`));
         for (const command of listCommand) {
           try {
             const module = require(`${commandsPath}/${command}`);
@@ -270,7 +270,7 @@ function onBot() {
 
             if (!config?.name) {
               try {
-                throw new Error(`[ COMMAND ] ${command} command has no name property or empty!`);
+                throw new Error(`[ LUNA ] ${command} command has no name property or empty!`);
               } catch (error) {
                 console.log(chalk.red(error.message));
                 continue;
@@ -278,7 +278,7 @@ function onBot() {
             }
             if (!config?.commandCategory) {
               try {
-                throw new Error(`[ COMMAND ] ${command} commandCategory is empty!`);
+                throw new Error(`[ LUNA ] ${command} commandCategory is empty!`);
               } catch (error) {
                 console.log(chalk.red(error.message));
                 continue;
@@ -291,7 +291,7 @@ function onBot() {
             }
 
             if (global.client.commands.has(config.name || '')) {
-              console.log(chalk.red(`[ COMMAND ] ${chalk.hex("#FFFF00")(command)} Module is already loaded!`));
+              console.log(chalk.red(`[ LUNA ] ${chalk.hex("#FFFF00")(command)} Module is already loaded!`));
               continue;
             }
             const { dependencies, envConfig } = config;
@@ -342,7 +342,7 @@ function onBot() {
             if (module.handleEvent) global.client.eventRegistered.push(config.name);
             global.client.commands.set(config.name, module);
             try {
-              global.loading(`${cra(`LOADED`)} ${cb(config.name)} success`, "COMMAND");
+              global.loading(`${cra(`LOADED`)} ${cb(config.name)} success`, "LUNA");
             } catch (err) {
               console.error("An error occurred while loading the command:", err);
             }
